@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Refugio</title>
+</head>
+<body>
+    <h2>Refugio</h2>
+    <ul>
+        <!-- crear muchos li -->
+    
+        <% petList.forEach((item)=>{ %>
+            <li class="listItem">
+                <a href="http://localhost:4500/pet/<%= item.id %>">
+                    <h3><%= item.name %></h3>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
